@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>CHES Cellphone and Accessories Shop</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--css-->
+  <link href="my-profile.css" type="text/css" rel="stylesheet" />
+  <!---->
+
+  <!--fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Krona+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
+  <!---->
+
+  <!--icons-->
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.2.0/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.2.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.2.0/uicons-regular-straight/css/uicons-regular-straight.css'>
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.2.0/uicons-solid-straight/css/uicons-solid-straight.css'>
+  <!---->
+
+ </head>
+ <body>
+
+  <!--header-->
+  <div class="header">
+   <div class="left-header">
+    <i class="fi fi-rr-arrow-small-left"></i>
+    <p>My Profile</p>
+   </div>
+   <div class="right-header">
+    <img src="icons/logo.svg">
+    <p>CHES</p>
+   </div>
+  </div>
+  <!---->
+
+  <!--main container-->
+  <div class="main-container">
+   <div class="left-main">
+    <p>First Name</p>
+    <div class="display-info">Debbie</div><br>
+    <p>Last Name</p>
+    <div class="display-info">Gerodias</div><br>
+    <p>Phone Number</p>
+    <div class="display-info">09923316087</div><br>
+    <p>Email</p>
+    <div class="display-info">debbiegerodias19@gmail.com</div><br>
+   </div>
+   <div class="vertical"></div>
+   <!--delete account warning//hidden-->
+   <div class="warning">
+    <i class="fi fi-rs-triangle-warning"></i><br>
+    <p>Are you sure you want to delete this account? Your existing data will be lost.</p>
+    <button class="no-btn" id="noBtnID">NO</button>
+    <button class="yes-btn" id="yesBtnID">YES</button>
+   </div>
+   <div class="check">
+    <i class="fi fi-ss-check-circle"></i><br>
+    <p>ACCOUNT HAS BEEN SUCCESSFULLY DELETED!</p>
+    <button class="ok-btn" id="okBtnID">OKAY</button>
+   </div>
+   <!---->
+   <div class="right-main">
+    <img id="uploadedImageID" src="icons/profile.png" alt="Upload Image"><br>
+    <button class="edit-profile" id="editProfileID">EDIT PROFILE</button><br>
+    <button class="delete-account" id="deleteAccountID">DELETE ACCOUNT</button>
+   </div>
+  </div>
+
+  <!--script-->
+  <script type="text/javascript" src="my-profile.js"></script>
+  <!---->
+ </body>
+</html>
