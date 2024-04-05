@@ -491,6 +491,9 @@ button {
 
 /*media*/
 @media only screen and (max-width: 1160px) {
+ .body {
+  overflow-x: hidden;
+ }
  .bg-img, .fade {
   height: 90vh;
  }
