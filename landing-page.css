@@ -544,6 +544,7 @@ button {
 @media only screen and (max-width: 1000px) {
  #menu-icon {
   display: block;
+  margin-top: 5px;
  }
  .left-header {
   font-size: 15px;
@@ -750,6 +751,11 @@ button {
  .accessories-container {
   width: 60%;
  }
+ .view-more-container {
+  text-align: center;
+  padding-right: 0;
+  padding-left: 40px;
+ }
  .services, .services2 {
   width: 70%;
   margin-left: 40px;
@@ -844,6 +850,9 @@ button {
  .cp-container, .cp-container2, .acc-container, .acc-container2 {
   padding: 0 20px 50px 20px;
  }
+ .view-more-container {
+  padding-left: 0;
+ }
  .services-container {
   padding: 0 20px 50px 20px;
  }
@@ -906,8 +915,7 @@ button {
   width: 150px;
  }
  .subtitle {
-  padding-bottom: 30px;
-  width: 90%;
+  width: 80%;
  }
  .bg-img {
   height: 230%;
@@ -915,11 +923,8 @@ button {
  .services, .services2 {
   width: 65%;
  }
-}
-
-@media only screen and (max-width: 340px) {
- .subtitle {
-  padding-bottom: 20px;
+ .phone-repair-container, .laptop-repair-container {
+  margin: 0 auto;
  }
 }
 
@@ -927,13 +932,13 @@ button {
  .content {
   padding-left: 15px;
  }
- .subtitle {
-  width: 100%;
- }
  .left-header p {
   display: none;
  }
  .title {
   padding-bottom: 10px;
+ }
+ .cp-product-container, .cp-product-container2 {
+  padding-top: 70px;
  }
 }
