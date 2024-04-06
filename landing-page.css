@@ -105,6 +105,7 @@ button {
  position: absolute;
  width: 100%;
  max-height: 100vh;
+ object-fit: cover;
 }
 .content {
  position: absolute;
@@ -569,8 +570,7 @@ button {
   margin-bottom: 20px;
  }
  .menu-btn:hover {
-  width: 200px;
-  border-radius: 0;
+  background-color: #000F22;
  }
  .sign-in-btn {
   display: block;
@@ -782,6 +782,9 @@ button {
 }
 
 @media only screen and (max-width: 550px) {
+ .left-header {
+  background-color: #000F22;
+ }
  .content {
   padding-top: 30px;
  }
@@ -799,9 +802,6 @@ button {
 @media only screen and (max-width: 500px) {
  .right-header {
   overflow-x: hidden;
- }
- .menu {
-  width: 260px;
  }
  .menu-btn:hover {
   width: 260px;
@@ -872,13 +872,8 @@ button {
  .right-header {
   overflow-x: hidden;
  }
- .menu {
-  width: 196px;
- }
- .menu-btn:hover {
-  background-color: #000F22;
-  padding: 20px;
-  width: 196px;
+ .bg-img {
+  height: 230%;
  }
  .content {
   padding-left: 25px;
@@ -886,9 +881,6 @@ button {
  }
  .title {
   font-size: 25px;
- }
- .subtitle {
-  width: 100%;
  }
  .title, .subtitle {
   padding-bottom: 20px;
@@ -913,16 +905,12 @@ button {
 }
 
 @media only screen and (max-width: 360px) {
- .menu {
-  width: 158px;
- }
  .subtitle {
   padding-bottom: 30px;
   width: 90%;
  }
- .sign-up-btn {
-  background-color: #052355;
-  color: white;
+ .bg-img {
+  height: 230%;
  }
  .services, .services2 {
   width: 65%;
@@ -930,18 +918,12 @@ button {
 }
 
 @media only screen and (max-width: 340px) {
- .menu {
-  width: 138px;
- }
  .subtitle {
   padding-bottom: 20px;
  }
 }
 
 @media only screen and (max-width: 324px) {
- .menu {
-  width: 193px;
- }
  .content {
   padding-left: 15px;
  }
@@ -953,11 +935,5 @@ button {
  }
  .title {
   padding-bottom: 10px;
- }
-}
-
-@media only screen and (max-width: 310px) {
- .menu {
-  width: 178px;
  }
 }
