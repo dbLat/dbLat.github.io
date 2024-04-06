@@ -803,9 +803,6 @@ button {
  .right-header {
   overflow-x: hidden;
  }
- .menu-btn:hover {
-  width: 260px;
- }
 }
 
 @media only screen and (max-width: 460px) {
@@ -905,6 +902,9 @@ button {
 }
 
 @media only screen and (max-width: 360px) {
+ .menu {
+  width: 150px;
+ }
  .subtitle {
   padding-bottom: 30px;
   width: 90%;
