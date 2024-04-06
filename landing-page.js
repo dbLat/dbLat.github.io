@@ -1,11 +1,20 @@
-//hamburger menu when tablet to cp mode
+//hamburger menu when 1000px
 let hamburger = document.querySelector('#menu-icon');
 let menu = document.querySelector('.menu');
+let x = document.querySelector('.x');
 
 hamburger.onclick = () => {
- menu.classList.toggle('open');
+ hamburger.style.display = 'none';
+ x.style.display = 'block';
+ menu.classList.add('open');
 }
-//
+
+x.onclick = () => {
+ hamburger.style.display = 'block';
+ x.style.display = 'none';
+ menu.classList.remove('open');
+}
+
 
 //cp new arrivals and best seller
 document.addEventListener('DOMContentLoaded', function() {
