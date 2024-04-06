@@ -544,7 +544,12 @@ button {
 @media only screen and (max-width: 1000px) {
  #menu-icon {
   display: block;
-  margin-top: 10px;
+  margin-top: 5px;
+  font-size: 15px;
+ }
+ .x {
+  margin-top: 5px;
+  font-size: 15px;
  }
  .left-header {
   font-size: 15px;
@@ -922,9 +927,6 @@ button {
  }
  .services, .services2 {
   width: 65%;
- }
- .phone-repair-container, .laptop-repair-container {
-  margin: 0 auto;
  }
 }
 
