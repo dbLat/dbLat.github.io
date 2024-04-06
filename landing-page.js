@@ -14,6 +14,7 @@ x.onclick = () => {
  x.style.display = 'none';
  menu.classList.remove('open');
 }
+//
 
 
 //cp new arrivals and best seller
