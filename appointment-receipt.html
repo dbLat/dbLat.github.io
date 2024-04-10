@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!--css-->
-  <link href="reservation-receipt.css" type="text/css" rel="stylesheet" />
+  <link href="appointment-receipt.css" type="text/css" rel="stylesheet" />
   <!---->
 
   <!--fonts-->
@@ -37,13 +37,13 @@
   <!--main container-->
   <div class="main-container">
    <div class="left-container">
-    <img src="/icons/reservation-icon.svg">
+    <img src="/icons/repair-icon2.svg">
     <p>Thank you for trusting CHES Cellphone and Accessories Shop!</p>
    </div>
    <div class="line"></div>
    <div class="right-container">
     <div class="title-container">
-     <p>Reservation Receipt</p><br>
+     <p>Appointment Receipt</p><br>
      <i>Please note that if you fail to arrive at the shop on the date you have set,<br> your reservation will be void. </i>
     </div>
     <div class="receipt-container">
@@ -51,34 +51,33 @@
      <div class="receipt-details">
       <div class="left-details">
        <div>
-        <p class="title">Reservation ID</p>
-        <p class="display">RP00001</p>
+        <p class="title">Appointment ID</p>
+        <p class="display">012345678</p>
        </div>
        <div>
-        <p class="title">Model Unit Color</p>
-        <p class="display"><span id="displayUnitColor"></span></p>
+        <p class="title">Brand & Model Unit</p>
+        <p class="display"><span id="displayCpUnit"></span></p>
        </div>
        <div>
-        <p class="title">Price</p>
-        <p class="display">15980.00</p>
+        <p class="title">Unit Issue</p>
+        <p class="issue"><span id="displayUnitIssue"></span></p>
        </div>
       </div>
       <div class="right-details">
        <div>
-        <p class="title">Buyer</p>
+        <p class="title">Client</p>
         <p class="display">Debbie Gerodias</p>
        </div>
        <div>
-        <p class="title">Date to Purchase</p>
-        <p class="display"><span id="displayPurchaseDate"></span></p>
+        <p class="title">Appointment Date</p>
+        <p class="display"><span id="displayAppDate"></span></p>
        </div>
        <div>
-        <p class="title">Quantity</p>
-        <p class="display"><span id="displayQuantity"></span></p>
+        <p class="title">Time</p>
+        <p class="time"><span id="displayTime"></span></p>
        </div>
       </div>
      </div>
-     <p class="total-payment">Total Payment: <span id="displayTotalPayment"></span></p>
     </div>
     <button class="okay-btn">OKAY</button>
    </div>
@@ -105,6 +104,6 @@
   </div>
   <!---->
   <!--script-->
-  <script type="text/javascript" src="reservation-receipt.js"></script>
+  <script type="text/javascript" src="appointment-receipt.js"></script>
  </body>
 </html>

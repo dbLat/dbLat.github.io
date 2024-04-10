@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+   }
+   body {
+    height: 102vh;
+    font-family: "Inter", sans-serif;
+    overflow: hidden;
+   }
+
+.maindiv{
+    height: 100%;
+    width: 101.6%;
+    display: flex;
+    justify-content: space-between;
+    margin:-1%;
+}
+
+.leftdiv{
+    height: 101%;
+    width: 63%;
+    background-image: url('bg-img/background.svg');
+    float:left;
+    background-repeat: no-repeat;
+}
+
+
+.rightdiv{
+    height: 100%;
+    width: 50%; 
+    float: right;
+    background-color: white;
+    padding: 50px;
+}
+
+.logo{
+    width:13%;
+    height: 13vh;
+    margin-top: 5%;
+    margin-left: 4%;
+}
+
+.new{
+    font-family: "Montserrat", sans-serif;
+    color:white;
+    font-size: 64px;
+    margin-top: 20%;
+    margin-left: 10%;
+    font-weight: bold;
+}
+
+.sign{
+    font-family: 'Montserrat', sans-serif;
+    color:white;
+    font-size: 3vh;
+    margin-top: 3%;
+    margin-left: 10%;
+}
+
+.already{
+    font-family: sans-serif;
+    color: black;
+    font-size: 2.5vh;
+    margin-top: 25%;
+    text-align: center;
+}
+
+.create{
+    font-family:'Inter', sans-serif;
+    color:midnightblue;
+    font-size: 35px;
+    text-align:left;
+    margin-left:8%;
+    margin-top:10%;
+    margin-bottom: 7%;
+}
+
+.firstname{
+    border: 0px;
+    border-bottom: 1px solid black;
+    margin-left:8%;
+    width: 83%;
+    height: 5vh;
+    font-size:100%;
+    background: transparent;
+    text-indent:7%;
+    margin-top:1%;
+    margin-bottom: 2%;
+}
+
+.field-image{
+    margin-left:-84%;
+    margin-bottom:-0.5%;
+    width:3%;
+    height:3%;
+}
+
+.password{
+    border: 0px;
+    border-bottom: 1px solid black;
+    margin-left:8%;
+    width: 83%;
+    margin-top:1%;
+    height: 5vh;
+    font-size:100%;
+    background: transparent;
+    text-indent:7%;
+    margin-bottom: 2%;
+}
+
+.confirmpass{
+    border: 0px;
+    border-bottom: 1px solid black;
+    margin-left:8%;
+    width: 83%;
+    margin-top:1%;
+    height: 5vh;
+    font-size:100%;
+    background: transparent;
+    text-indent:7%;
+    margin-bottom: 2%;
+}
+
+.eye-image{
+    margin-left:75%;
+    margin-bottom:-0.5%;
+    width:3%;
+    height:3%;
+}
+
+.eye-image-confirm{
+    margin-left:75%;
+    margin-bottom:-0.5%;
+    width:3%;
+    height:3%;
+}
+
+.button-signup{
+    height: 7vh;
+    width: 84%;
+    margin-top:3%;
+    margin-left:8%;
+    border-radius:2vh;
+    border-width: 0px;
+    background-color: midnightblue;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button-signup:hover{
+    background-color:royalblue;
+}
+
+/*media*/
+@media only screen and (max-width: 1150px) {
+    .already{
+        margin-top: 35%;
+    }
+    .rightdiv {
+        margin-top: 1%;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .already{
+        margin-top: 45%;
+    }
+    .rightdiv {
+        margin-top: 3%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .new{
+        font-size: 60px;
+        margin-top: 30%;
+    }
+    .rightdiv {
+        margin-top: 5%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .new{
+        font-size: 50px;
+        margin-top: 35%;
+    }
+    .already {
+        margin-top: 50%;
+    }
+    .firstname, .password, .confirmpass {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    body {
+        overflow: scroll;
+        overflow-x: hidden;
+    }
+    .maindiv {
+        flex-direction: column;
+    }
+    .leftdiv {
+        width: 100%;
+    }
+    .new {
+        margin-top: 20%;
+        margin-bottom: 0;
+    }
+    .already {
+        margin-top: 30%;
+        margin-bottom: 10%;
+    }
+    .rightdiv {
+        width: 100%;
+        padding: 0;
+        padding-bottom: 50px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .new {
+        margin-top: 25%;
+    }
+    .already {
+        margin-bottom: 5%;
+    }
+
+}

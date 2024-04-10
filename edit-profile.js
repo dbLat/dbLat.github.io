@@ -15,10 +15,34 @@ inputFile.onchange = function(){
 }
 //
 
+//display image in edit-profile
+document.getElementById('inputFile').addEventListener('change', function(event) {
+ const file = event.target.files[0];
+ const reader = new FileReader();
+ reader.onload = function(e) {
+  const imgData = e.target.result;
+  localStorage.setItem('uploadedImage', imgData);
+ }
+ reader.readAsDataURL(file);
+});
+//
+
+//display photo
+const imgData = localStorage.getItem('uploadedImage');
+  if (imgData) {
+    document.getElementById('profilePic').src = imgData;
+  }
+//
+
 //form validation
 let saveChanges = document.querySelector("#saveID");
+let form = document.getElementById("editProfile");
+let savedChangesBox = document.querySelector('.saved-changes');
+let okButton = document.querySelector('#okBtnID');
 
-saveChanges.onclick = () => {
+form.addEventListener('submit', function(event) {
+ event.preventDefault();
+
  let firstName = document.querySelector("#firstNameID").value.trim();
  let lastName = document.querySelector("#lastNameID").value.trim();
  let phoneNumber = document.querySelector("#phoneNumberID").value.trim();
@@ -60,9 +84,9 @@ saveChanges.onclick = () => {
  }
 
  if (isValid) {
-  console.log("All fields are valid. Saving changes...");
+  savedChangesBox.classList.add('open');
  }
-}
+});
 
 //function to validate email format
 function isValidEmail(email) {
@@ -71,18 +95,13 @@ function isValidEmail(email) {
 }
 //
 
-//saved changes
-let saveID = document.querySelector('#saveID');
-let savedChangesBox = document.querySelector('.saved-changes');
-let okButton = document.querySelector('#okBtnID');
-
-saveID.onclick = () => {
- savedChangesBox.classList.add('open');
-} 
-
+//if ok and the form inputs are correct 
 okButton.onclick = () => {
- savedChangesBox.classList.remove('open');
-} 
+ const imgData = localStorage.getItem('uploadedImage');
+ if (imgData) {
+  document.getElementById("editProfile").submit();
+ }
+};
 //
 
 //change pass button
@@ -91,3 +110,4 @@ let changePassButton = document.querySelector('#changePassButton');
 changePassButton.onclick = () => {
  window.location.href = "change-password.html";
 }
+//

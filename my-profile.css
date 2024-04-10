@@ -2,14 +2,11 @@
  margin: 0;
  padding: 0;
 }
+ /*background-image: linear-gradient(to bottom,#052355 10%, #2A5181 60%,#C2E8FF 100%);*/
 body {
  height: 100vh;
  font-family: "Inter", sans-serif;
- /*background-image: linear-gradient(to bottom,#052355 10%, #2A5181 60%,#C2E8FF 100%);*/
- background-image: url('bg-img/linear-bg.png');
- background-size: cover;
- background-position: center;
- background-repeat: no-repeat;
+ overflow-y: hidden;
 }
 
 /*header*/
@@ -48,12 +45,18 @@ body {
 
 /*main container*/
 .main-container {
+ background-image: url('bg-img/linear-bg.png');
+ background-size: cover;
+ background-position: center;
+ background-repeat: no-repeat;
+ height: 100vh;
  display: flex;
  justify-content: space-evenly;
- margin-top: 5%;
+ align-items: center;
 }
 .left-main {
  color: white;
+ margin-bottom: 50px;
 }
 .left-main p {
  font-size: 20px;
@@ -71,11 +74,12 @@ body {
 .vertical {
  height: 470px;
  width: 1px;
- margin-top: -35px;
  background-color: white;
+ margin-top: -80px;
 }
 .right-main {
  text-align: center;
+ margin-bottom: 50px;
 }
 .right-main img {
  border-radius: 50%;
@@ -119,6 +123,7 @@ body {
 }
 .warning {
  position: absolute;
+ top: 30%;
  background-color: white;
  width: 400px;
  text-align: center;
@@ -215,4 +220,133 @@ body {
  background-color: #F2B38D;
  color: #A4430A;
  transition: all 0.3s ease;
+}
+/**/
+
+/*media*/
+@media only screen and (max-width: 1280px) {
+ body {
+  overflow-x: hidden;
+ }
+}
+
+@media only screen and (max-width: 700px) {
+ .display-info {
+  width: 250px;
+ }
+ .right-main img {
+  width: 150px;
+  height: 150px;
+ }
+ .edit-profile, .delete-account {
+  width: 150px;
+  font-size: 13px;
+ }
+ .edit-profile:hover {
+  background-color: #F79256;
+  color: white;
+ }
+ .delete-account:hover {
+  background-color: #052355;
+  color: white;
+ }
+ .vertical {
+  height: 80%;
+ }
+}
+
+@media only screen and (max-width: 550px) {
+ .header {
+  padding-left: 20px;
+ }
+ .left-header {
+  column-gap: 15px;
+ }
+ .left-header p {
+  font-size: 20px;
+ }
+ .left-header i {
+  font-size: 30px;
+ }
+}
+
+@media only screen and (max-width: 500px) {
+ body {
+  overflow-y: scroll;
+ }
+ .main-container {
+  height: 160vh;
+  flex-direction: column;
+ }
+ .vertical {
+  width: 80%;
+  height: 1px;
+  background-color: white;
+  margin: 0 auto;
+ }
+ .right-main img {
+  width: 200px;
+  height: 200px;
+ }
+ .edit-profile, .delete-account {
+  width: 200px;
+ }
+ .right-main {
+  margin-top: 0;
+ }
+ .left-main {
+  margin: 0 auto;
+  margin-bottom: 0;
+ }
+ .display-info {
+  width: 300px;
+ }
+ .warning {
+  top: 150%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+ }
+}
+
+@media only screen and (max-width: 460px) {
+ .main-container {
+  height: 250vh;
+ }
+ .left-main {
+  margin-top: 50px;
+ }
+ .right-main {
+  margin-top: 50px;
+  margin-bottom: 50px;
+ }
+ .vertical {
+  margin-top: 50px;
+ }
+}
+
+@media only screen and (max-width: 400px) {
+ .left-header p {
+  font-size: 15px;
+  white-space: nowrap;
+ }
+ .right-header {
+  margin-right: 10px;
+  column-gap: 10px;
+ }
+}
+
+@media only screen and (max-width: 360px) {
+ .main-container {
+  overflow-x: hidden;
+ }
+ .warning {
+  width: 250px;
+ }
+ .warning p {
+  font-size: 15px;
+ }
+ .right-header p {
+  display: none;
+ }
 }

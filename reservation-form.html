@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!--css-->
-  <link href="reservation.css" type="text/css" rel="stylesheet" />
+  <link href="reservation-form.css" type="text/css" rel="stylesheet" />
   <!---->
 
   <!--fonts-->
@@ -20,6 +20,10 @@
 
   <!--icons-->
   <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.2.0/uicons-regular-straight/css/uicons-regular-straight.css'>
+  <!---->
+
+  <!--Web-logo-->
+  <link rel="icon" href="icons/logo.svg">
   <!---->
 
  </head>
@@ -80,33 +84,34 @@
       </div>
      </div>
      <i>Fill out the following:</i><br><br>
-     <div class="fill-out-container">
-      <div>
-       <p>Model Unit Color</p>
-        <select name="unitColor" id="unitColorID" class="unitColor">
-         <option>Majestic Red</option>
-         <option>Space Black</option>
-         <option>Himalayan Blue</option>
-       </select><br>
-       <p>Date to Purchase</p>
-       <input type="date" name="purchaseDate" id="purchaseDateID" class="purchaseDate"><br><br><br>
-      </div>
-      <div class="inputInfo">
-       <p>Quantity</p>
-       <input type="number" name="quantity" class="quantity" id="quantityID" min="1">
-      </div>
-     </div>
-     <div class="payment-container">
-      <p class="total-payment">Total Payment: 15980.00</p>
-      <button class="cancel-btn" id="cancelID">CANCEL</button>
-      <button class="confirm-btn" id="confirmID">CONFIRM</button>
-      </div>
-     </div>
+      <form id="reservationForm" action="reservation-receipt.html" method="get">
+        <div class="fill-out-container">
+          <div>
+            <p>Model Unit Color</p>
+            <select name="unitColor" id="unitColorID" class="unitColor">
+              <option>Majestic Red</option>
+              <option>Space Black</option>
+              <option>Himalayan Blue</option>
+            </select><br>
+            <p>Date to Purchase</p>
+            <input type="date" name="purchaseDate" id="purchaseDateID" class="purchaseDate"><br><br><br>
+          </div>
+          <div class="inputInfo">
+            <p>Quantity</p>
+            <input type="number" name="quantity" class="quantity" id="quantityID" min="1">
+          </div>
+        </div>
+        <div class="payment-container">
+          <p class="total-payment" id="totalPayment"></p>
+          <button type="button" class="cancel-btn" id="cancelID">CANCEL</button>
+          <button type="submit" class="confirm-btn" id="confirmID">CONFIRM</button>
+        </div>
+      </form>
     </div>
    </div>
   </div>
   <!---->
   <!--script-->
-  <script type="text/javascript" src="reservation.js"></script>
+  <script type="text/javascript" src="reservation-form.js"></script>
  </body>
 </html>

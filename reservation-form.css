@@ -124,6 +124,7 @@ body {
  font-size: 20px;
  font-weight: bold;
  color: white;
+ width: 300px;
 }
 .cancel-btn {
  border: none;
@@ -220,6 +221,9 @@ body {
 
 /*media*/
 @media only screen and (max-width: 1140px) {
+ body {
+  overflow-x: hidden;
+ }
  .main-container {
   column-gap: 100px;
  }
@@ -243,6 +247,14 @@ body {
 @media only screen and (max-width: 1000px) {
  .unit-container, .info-container, .fill-out-container {
   column-gap: 30px;
+ }
+ .cancel-btn:hover {
+  background-color: #000F22;
+  color: white;
+ }
+ .confirm-btn:hover {
+  background-color: #F79256;
+  color: white;
  }
 }
 
@@ -353,8 +365,10 @@ body {
   margin-right: 0;
   margin-left: 5%;
  }
+ .payment-container {
+  column-gap: 50px;
+ }
  .confirm-box-container {
-  top: 60%;
   left: 130px;
  }
 }
@@ -399,7 +413,6 @@ body {
   margin-right: 10%;
  }
  .confirm-box-container {
-  top: 60%;
   left: 90px;
  }
 }
@@ -414,7 +427,7 @@ body {
 @media only screen and (max-width: 500px) {
  .confirm-box-container {
   top: 60%;
-  left: 10px;
+  left: 35px;
  }
  .title-container {
   width: 90%;
@@ -440,8 +453,8 @@ body {
 
 @media only screen and (max-width: 400px) {
  .confirm-box-container {
-  top: 60%;
   width: 300px;
+  left: 25px;
  }
  .left-container {
   display: flex;
@@ -455,18 +468,36 @@ body {
  .title-container i {
   font-size: 11px;
  }
+ .unitColor {
+  width: 360px;
+ }
+ .purchaseDate {
+  width: 345px;
+ }
+ .quantity {
+  width: 343px;
+ }
 }
 
 @media only screen and (max-width: 360px) {
  .confirm-box-container {
   top: 60%;
   width: 500%;
-  left: 20px;
+  left: 30px;
  }
  .left-container {
   margin-bottom: 50px;
  }
  .title-container i {
   overflow-wrap: break-word;
+ }
+ .unitColor {
+  width: 325px;
+ }
+ .purchaseDate {
+  width: 315px;
+ }
+ .quantity {
+  width: 307px;
  }
 }

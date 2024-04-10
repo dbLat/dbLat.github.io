@@ -85,11 +85,14 @@ body {
 .display {
  font-size: 17px;
 }
-.total-payment {
- font-weight: bold;
- font-size: 20px;
- text-align: right;
- margin-top: 50px;
+.issue {
+ font-size: 17px;
+ width: 200px;
+ text-align: justify;
+}
+.time {
+ font-size: 17px;
+ width: 100px;
 }
 .okay-btn {
  border: none;
@@ -151,7 +154,25 @@ body {
  }
 }
 
-@media only screen and (max-width: 980px) {
+@media only screen and (max-width: 1150px) {
+ .main-container {
+  column-gap: 80px;
+ }
+}
+
+@media only screen and (max-width: 1115px) {
+ .main-container {
+  column-gap: 50px;
+ }
+}
+
+@media only screen and (max-width: 1050px) {
+ .main-container {
+  column-gap: 30px;
+ }
+}
+
+@media only screen and (max-width: 1000px) {
  .main-container {
   column-gap: 50px;
  }
@@ -160,6 +181,9 @@ body {
  }
  .right-details {
   padding-left: 20px;
+ }
+ .issue, .time {
+  width: 100%;
  }
  .main-container img {
   margin-top: 100px;
@@ -170,15 +194,7 @@ body {
  }
 }
 
-@media only screen and (max-width: 898px) {
- .total-payment {
-  font-size: 18px;
-  white-space: nowrap;
-  text-align: left;
- }
-}
-
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 900px) {
  .left-header {
   padding-left: 20px;
  }
@@ -196,6 +212,9 @@ body {
  }
  .receipt-details {
   flex-direction: row;
+ }
+ .issue {
+  width: 200px;
  }
  .total-payment {
   text-align: right;
@@ -220,16 +239,16 @@ body {
   align-items: center;
  }
  .title-container i {
-  font-size: 14px;
+  font-size: 13px;
  }
-}
-
-@media only screen and (max-width: 500px) {
  .receipt-details {
   flex-direction: column;
  }
  .right-details {
   padding-left: 20px;
+ }
+ .issue {
+  width: 100%;
  }
 }
 
@@ -254,7 +273,7 @@ body {
 
 @media only screen and (max-width: 400px) {
  .left-details, .right-details {
-  padding-left: 15px;
+  padding-left: 5px;
  }
 }
 

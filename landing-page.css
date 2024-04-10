@@ -82,14 +82,16 @@ button {
 }
 #menu-icon {
  color: white;
- font-size: 20px;
+ font-size: 15px;
+ margin-top: 5px;
  cursor: pointer;
  z-index: 10001;
  display: none;
 }
 .x {
  color: white;
- font-size: 20px;
+ font-size: 15px;
+ margin-top: 5px;
  cursor: pointer;
  z-index: 10001;
  display: none;
@@ -544,12 +546,6 @@ button {
 @media only screen and (max-width: 1000px) {
  #menu-icon {
   display: block;
-  margin-top: 5px;
-  font-size: 15px;
- }
- .x {
-  margin-top: 5px;
-  font-size: 15px;
  }
  .left-header {
   font-size: 15px;

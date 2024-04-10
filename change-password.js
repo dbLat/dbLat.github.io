@@ -45,27 +45,46 @@ eyeIcon3.onclick = () => {
 //
 
 //check if new pass and confirm pass match
-let savedChanges = document.querySelector('#saveID');
-let savedChangesBox = document.querySelector('.saved-changes');
 let okButton = document.querySelector('#okBtnID');
 
-savedChanges.onclick = () => {
-  if (newPass.value !== confirmPass.value) {
-   alert("New password and confirm password don't match!");
-  }
-  else if (newPass.value == "" || confirmPass.value == "") {
+okButton.onclick = () => {
+  const newPass = document.getElementById('newPassID').value.trim();
+  const confirmPass = document.getElementById('confirmPassID').value.trim();
+  const savedChangesBox = document.querySelector('.saved-changes');
+
+  if (newPass !== confirmPass) {
+    alert("New password and confirm password don't match!");
+  } else if (newPass === "" || confirmPass === "") {
     alert("Enter a new password first.");
-  }
-  else if (newPass.value.length < 8 || confirmPass.value.length < 8) {
-   alert("Password should be at least 8 characters long.");
-  }
-  else {
-   savedChangesBox.classList.add('open');
-   okButton.onclick = () => {
-    savedChangesBox.classList.remove('open');
-   }
+  } else if (newPass.length < 8 || confirmPass.length < 8) {
+    alert("Password should be at least 8 characters long.");
+  } else {
+    savedChangesBox.classList.add('open');
   }
 }
+//
+
+//change pass
+document.getElementById('saveID').addEventListener('click', function() {
+  const newPass = document.getElementById('newPassID').value.trim();
+  const curPass = document.getElementById('currentPassID').value.trim();
+
+  if (newPass !== curPass ) {
+    document.getElementById('currentPassID').value = newPass;
+    document.getElementById('newPassID').value = "";
+    document.getElementById('confirmPassID').value = "";
+  }
+  else {
+    alert('Cannot change password to the current one!');
+  }
+});
+//
+
+//display photo
+const imgData = localStorage.getItem('uploadedImage');
+  if (imgData) {
+    document.getElementById('profilePic').src = imgData;
+  }
 //
 
 //back button 
