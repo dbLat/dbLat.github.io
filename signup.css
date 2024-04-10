@@ -201,6 +201,7 @@
     }
     .maindiv {
         flex-direction: column;
+        overflow-x: hidden;
     }
     .leftdiv {
         width: 100%;
@@ -243,5 +244,13 @@
     .logo {
         width:15%;
         height: 15vh;
+    }
+    .eye-image, .eye-image-confirm {
+        width: 4%;
+        height: 4vh;
+    }
+    .field-image {
+        width: 4%;
+        height: 4vh;
     }
 }
