@@ -240,17 +240,24 @@
     }
     .new {
         font-size: 40px;
+        margin-top: 20%;
     }
     .logo {
         width:15%;
         height: 15vh;
+        margin-top: 2%;
     }
     .eye-image, .eye-image-confirm {
         width: 4%;
         height: 4vh;
+        margin-bottom: 0;
     }
     .field-image {
         width: 4%;
         height: 4vh;
+        margin-bottom: 0;
+    }
+    .rightdiv {
+        margin-bottom: 30px;
     }
 }
