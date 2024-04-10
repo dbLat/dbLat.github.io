@@ -245,17 +245,17 @@
     .logo {
         width:15%;
         height: 15vh;
-        margin-top: 2%;
+        margin-top: 0%;
     }
     .eye-image, .eye-image-confirm {
         width: 4%;
         height: 4vh;
-        margin-bottom: 0;
+        margin-bottom: -0.6%;
     }
     .field-image {
         width: 4%;
         height: 4vh;
-        margin-bottom: 0;
+        margin-bottom: -0.6%;
     }
     .rightdiv {
         margin-bottom: 30px;
