@@ -191,6 +191,7 @@ body {
  background-color: #C2E8FF;
  opacity: 0;
  transition: opacity 0.5s;
+ z-index: 2;
 }
 .check.open {
  opacity: 1;
@@ -318,10 +319,12 @@ body {
  }
  .right-main {
   margin-top: 50px;
-  margin-bottom: 50px;
  }
  .vertical {
   margin-top: 50px;
+ }
+ .check {
+  width: 300px;
  }
 }
 
@@ -334,12 +337,16 @@ body {
   margin-right: 10px;
   column-gap: 10px;
  }
+ .main-container {
+  justify-content: flex-start;
+  height: 200vh;
+ }
+ .check {
+  top: 120%;
+ }
 }
 
 @media only screen and (max-width: 360px) {
- .main-container {
-  overflow-x: hidden;
- }
  .warning {
   width: 250px;
  }
@@ -348,5 +355,11 @@ body {
  }
  .right-header p {
   display: none;
+ }
+ .check {
+  width: 250px;
+ }
+ .check p{
+  font-size: 15px;
  }
 }
