@@ -22,6 +22,7 @@
     background-image: url('bg-img/background.svg');
     float:left;
     background-repeat: no-repeat;
+    object-fit: cover;
 }
 
 
@@ -250,14 +251,16 @@
     .eye-image, .eye-image-confirm {
         width: 4%;
         height: 4vh;
-        margin-bottom: -0.6%;
+        margin-top: 2%;
+        margin-bottom: 0;
     }
     .field-image {
         width: 4%;
         height: 4vh;
-        margin-bottom: -0.6%;
+        margin-top: 2%;
+        margin-bottom: 0;
     }
     .rightdiv {
-        margin-bottom: 30px;
+        margin-bottom: 10px;
     }
 }
