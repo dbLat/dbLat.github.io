@@ -33,20 +33,32 @@
    <div class= "rightdiv">
       <p class="create"><b>Create Account</b></p>
     <form name="myForm" onsubmit="validate_form(this); checkForm(this); return false;">
-        <input class="firstname" type="text" name="myFirst" id="myFirst" placeholder="First Name">
-        <img src="icons/username.svg" alt="Firstname" class="field-image"><br>
-        <input class="firstname" type="text" name="myLast" id="myLast" placeholder="Last Name">
-        <img src="icons/username.svg" alt="Last name" class="field-image"><br>
-        <input class="firstname" type="number" name="phone" id="phone" placeholder="Phone Number">
-        <img src="icons/phone.svg" alt="phone number" class="field-image"><br>
-        <input class="firstname" type="text" name="email" id="email" placeholder="Email (Optional)">
-        <img src="icons/emailSignUp.svg" alt="Email" class="field-image"><br>
-        <input class="password" type="password" name="myPass" id="myPass" placeholder="Password">
-        <img src="icons/password.svg" alt="Password" class="field-image">
-        <img src="icons/eye-close.svg" alt="Key" id="eye-close" class="eye-image" onclick="togglePasswordVisibility()"><br>
-        <input class="confirmpass" type="password" name="confirm" id="confirm" placeholder="Confirm Password">
-        <img src="icons/password.svg" alt="Confirm" class="field-image">
-        <img src="icons/eye-close.svg" alt="Key" id="eye-close" class="eye-image-confirm" onclick="toggleConfirmPasswordVisibility()"><br>
+        <div class="input-con">
+          <input class="firstname" type="text" name="myFirst" id="myFirst" placeholder="First Name">
+          <img src="icons/username.svg" alt="Firstname" class="field-image">
+        </div>
+        <div class="input-con">
+          <input class="firstname" type="text" name="myLast" id="myLast" placeholder="Last Name">
+          <img src="icons/username.svg" alt="Last name" class="field-image">
+        </div>
+        <div class="input-con">
+          <input class="firstname" type="number" name="phone" id="phone" placeholder="Phone Number">
+          <img src="icons/phone.svg" alt="phone number" class="field-image">
+        </div>
+        <div class="input-con">
+          <input class="firstname" type="text" name="email" id="email" placeholder="Email (Optional)">
+          <img src="icons/emailSignUp.svg" alt="Email" class="field-image">
+        </div>
+        <div class="password-con">
+          <input class="password" type="password" name="myPass" id="myPass" placeholder="Password">
+          <img src="icons/password.svg" alt="Password" class="field-image">
+          <img src="icons/eye-close.svg" alt="Key" id="eye-close" class="eye-image" onclick="togglePasswordVisibility()">
+        </div>
+        <div class="password-con">
+          <input class="confirmpass" type="password" name="confirm" id="confirm" placeholder="Confirm Password">
+          <img src="icons/password.svg" alt="Confirm" class="field-image">
+          <img src="icons/eye-close.svg" alt="Key" id="eye-close" class="eye-image-confirm" onclick="toggleConfirmPasswordVisibility()">
+        </div>
         <button class="button-signup">SIGN UP</button>
     </form>
    </div>
