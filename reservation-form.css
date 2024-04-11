@@ -53,8 +53,9 @@ body {
 .title-container b {
  font-size: 33px;
 }
-.title-container i {
+.title-container p {
  font-size: 15px;
+ font-style: italic;
 }
 .form-container label {
  font-size: 15px;
@@ -435,9 +436,10 @@ input:focus {
  .title-container {
   width: 90%;
  }
- .title-container i {
-  white-space: nowrap;
-  font-size: 12px;
+ .title-container p {
+  white-space: normal;
+  font-size: 13px;
+  line-height: 20px;
  }
  .form-container {
   width: 90%;
@@ -455,6 +457,9 @@ input:focus {
 }
 
 @media only screen and (max-width: 400px) {
+ .main-container {
+  overflow-x: hidden;
+ }
  .confirm-box-container {
   width: 300px;
   left: 25px;
@@ -465,11 +470,11 @@ input:focus {
   justify-content: center;
   align-items: center;
  }
+ .left-container p {
+  width: 300px;
+ }
  .title-container b {
   font-size: 30px;
- }
- .title-container i {
-  font-size: 11px;
  }
  .unitColor {
   width: 360px;
@@ -478,7 +483,13 @@ input:focus {
   width: 345px;
  }
  .quantity {
-  width: 343px;
+  width: 345px;
+ }
+ .displayInfo2 {
+  margin-top: -5%;
+ }
+ .inputInfo {
+  margin-top: -13%;
  }
 }
 
@@ -490,9 +501,6 @@ input:focus {
  }
  .left-container {
   margin-bottom: 50px;
- }
- .title-container i {
-  overflow-wrap: break-word;
  }
  .unitColor {
   width: 325px;
