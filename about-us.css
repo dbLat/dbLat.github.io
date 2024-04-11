@@ -308,7 +308,7 @@
         display: block;
         margin-left: 50px;
         margin-bottom: 20px;
-        width: 200px;
+        width: 180px;
         border-radius: 0;
        }
 
@@ -442,6 +442,9 @@
       column-gap: 20px;
       padding-right: 30px;
     }
+    .account-container {
+      top: 13%;
+    }
    }
 
    @media only screen and (max-width: 360px) {
@@ -452,7 +455,7 @@
       font-size: 2.3vh;
     }
     .text-aboutus {
-      font-size: 5vh;
+      font-size: 4vh;
     }
    }
 

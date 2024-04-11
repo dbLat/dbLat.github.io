@@ -14,6 +14,8 @@ document.addEventListener('DOMContentLoaded', function() {
   }
   else {
    accountContainer.classList.remove('open');
+   hamburger.style.display = 'none';
+   x.style.display = 'block';
    menu.classList.toggle('open');
   }
  }
