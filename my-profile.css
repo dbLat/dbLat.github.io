@@ -339,7 +339,7 @@ body {
  }
  .main-container {
   justify-content: flex-start;
-  height: 200vh;
+  height: 180vh;
  }
  .check {
   top: 120%;

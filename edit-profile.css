@@ -282,7 +282,8 @@ input:focus {
 
 @media only screen and (max-width: 460px) {
  .main-container {
-  height: 200vh;
+  height: 180vh;
+  justify-content: flex-start;
  }
 }
 
@@ -294,6 +295,10 @@ input:focus {
  .right-header {
   margin-right: 10px;
   column-gap: 10px;
+ }
+ .left-main label {
+  top: 53%;
+  left: 51%;
  }
 }
 
