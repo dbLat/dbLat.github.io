@@ -243,7 +243,10 @@
 }
 
 
-@media only screen and (max-width: 370px) {
+@media only screen and (max-width: 360px) {
+    body {
+        overflow-x: hidden;
+    }
     .already {
         font-size: 2vh;
     }
