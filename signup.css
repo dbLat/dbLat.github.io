@@ -3,22 +3,20 @@
     padding: 0;
    }
    body {
-    height: 102vh;
+    height: 100vh;
     font-family: "Inter", sans-serif;
     overflow: hidden;
    }
 
 .maindiv{
     height: 100%;
-    width: 101.6%;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
-    margin:-1%;
 }
 
 .leftdiv{
-    height: 101%;
-    width: 63%;
+    height: 100%;
+    width: 130%;
     background-image: url('bg-img/background.svg');
     float:left;
     background-repeat: no-repeat;
@@ -28,7 +26,7 @@
 
 .rightdiv{
     height: 100%;
-    width: 50%; 
+    width: 100%; 
     float: right;
     background-color: white;
     padding: 30px 50px 0 50px;
