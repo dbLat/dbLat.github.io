@@ -322,6 +322,9 @@
     .account-container {
       left: 59%;
     }
+    #account-btn:hover {
+      background-color: #000F22;
+    }
    }
 
    @media only screen and (max-width: 960px) {
@@ -434,12 +437,19 @@
     }
    }
 
+   @media only screen and (max-width: 400px) {
+    .right-header {
+      column-gap: 20px;
+      padding-right: 30px;
+    }
+   }
+
    @media only screen and (max-width: 360px) {
     .menu {
       width: 150px;
     }
     .text-aboutus2 {
-      font-size: 2.8vh;
+      font-size: 2.3vh;
     }
     .text-aboutus {
       font-size: 5vh;

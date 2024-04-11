@@ -906,6 +906,9 @@ button {
  .contacts {
   grid-template-columns: 1fr;
  }
+ .right-header {
+  padding-right: 30px;
+ }
 }
 
 @media only screen and (max-width: 360px) {
