@@ -31,7 +31,10 @@
     width: 50%; 
     float: right;
     background-color: white;
-    padding: 50px;
+    padding: 30px 50px 0 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .logo{
@@ -72,7 +75,6 @@
     font-size: 35px;
     text-align:left;
     margin-left:8%;
-    margin-top:10%;
     margin-bottom: 7%;
 }
 
@@ -169,21 +171,22 @@ input:focus {
 }
 
 /*media*/
-@media only screen and (max-width: 1150px) {
-    .already{
-        margin-top: 35%;
+@media only screen and (max-width: 1100px) {
+    .field-image, .eye-image, .eye-image-confirm {
+        width: 4%;
+        height: 4vh;
     }
-    .rightdiv {
-        margin-top: 1%;
+    .password, .confirmpass {
+        margin-left: -1%;
+    }
+    .already {
+        margin-top: 40%;
     }
 }
 
 @media only screen and (max-width: 1000px) {
     .already{
         margin-top: 45%;
-    }
-    .rightdiv {
-        margin-top: 3%;
     }
     .button-signup:hover {
         background-color: midnightblue;
@@ -196,9 +199,6 @@ input:focus {
         font-size: 60px;
         margin-top: 30%;
     }
-    .rightdiv {
-        margin-top: 5%;
-    }
 }
 
 @media only screen and (max-width: 800px) {
@@ -209,8 +209,15 @@ input:focus {
     .already {
         margin-top: 50%;
     }
-    .firstname, .password, .confirmpass {
-        font-size: 15px;
+    .field-image, .eye-image, .eye-image-confirm {
+        width: 5%;
+        height: 5vh;
+    }
+    .password, .confirmpass {
+        margin-left: -1%;
+    }
+    .eye-image, .eye-image-confirm {
+        margin-left: 73%;
     }
 }
 
@@ -221,7 +228,6 @@ input:focus {
     }
     .maindiv {
         flex-direction: column;
-        overflow-x: hidden;
     }
     .leftdiv {
         width: 100%;
@@ -238,6 +244,17 @@ input:focus {
         width: 100%;
         padding: 0;
         padding-bottom: 50px;
+        margin-top: 10%;
+    }
+    .field-image, .eye-image, .eye-image-confirm {
+        width: 3%;
+        height: 3vh;
+    }
+    .eye-image, .eye-image-confirm {
+        margin-left: 76%;
+    }
+    .password, .confirmpass {
+        margin-left: -2%;
     }
 }
 

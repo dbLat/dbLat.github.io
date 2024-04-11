@@ -59,11 +59,4 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 //
 
-let signUp = document.querySelector('.sign-up-btn');
-
-signUp.onclick = () => {
-    window.location.href = "signup.html";
-}
-
-
 

@@ -13,9 +13,8 @@
  <link rel="preconnect" href="https://fonts.googleapis.com">
  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Krona+One&display=swap" rel="stylesheet">
- <link rel="preconnect" href="https://fonts.googleapis.com">
- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
  <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
  <!---->
 
  <!--icons-->
@@ -40,14 +39,17 @@
    <div class= "rightdiv">
     <p class="sign2"><b>Sign In</b></p>
     <form name="myForm">
-        <input class="username" type="text" name="myUser" id="myUser" placeholder="Username">
-        <img src="icons/username.svg" alt="Username" class="field-image"><br>
-        <input class="password" type="password" name="myPass" id="myPass" placeholder="Password">
-        <img src="icons/password.svg" alt="Password" class="field-image">
-        <img src="icons/eye-close.svg" alt="Key" id="eye-close" class="eye-image" onclick="togglePasswordVisibility()"><br>
+        <div class="input-con">
+            <input class="username" type="text" name="myUser" id="myUser" placeholder="Username">
+            <img src="icons/username.svg" alt="Username" class="field-image">
+        </div>
+        <div class="password-con">
+            <input class="password" type="password" name="myPass" id="myPass" placeholder="Password">
+            <img src="icons/password.svg" alt="Password" class="field-image">
+            <img src="icons/eye-close.svg" alt="Key" id="eye-close" class="eye-image" onclick="togglePasswordVisibility()">
+        </div>
         <button class="button-signin" onClick="login()">SIGN IN</button>
     </form>
-    <p class="forgpass">Forgot password?</p>
    </div>
 </div>
 
