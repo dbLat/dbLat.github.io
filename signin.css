@@ -257,11 +257,11 @@ input:focus {
     .dont {
         font-size: 2vh;
     }
-    .sign2 {
+    .sign {
         font-size: 2vh;
     }
     .welcome {
-        font-size: 40px;
+        font-size: 30px;
         margin-top: 20%;
     }
     .logo {
@@ -281,5 +281,8 @@ input:focus {
     .field-image {
         width: 4%;
         height: 4vh;
+    }
+    .rightdiv {
+        margin-bottom: 0;
     }
 }
