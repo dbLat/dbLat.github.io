@@ -93,6 +93,9 @@
     margin-top:1%;
     margin-bottom: 2%;
 }
+input:focus {
+    outline: none;
+}
 
 .field-image{
     margin-left:-83%;
@@ -242,13 +245,10 @@
     }
 }
 
-
 @media only screen and (max-width: 360px) {
-    body {
-        overflow-x: hidden;
-    }
     .already {
         font-size: 2vh;
+        overflow-x: hidden;
     }
     .sign {
         font-size: 2vh;
@@ -260,15 +260,16 @@
     .logo {
         width:15%;
         height: 15vh;
-        margin-top: 3%;
-        margin-left: 4%;
+        margin-top: 1%;
+        margin-left: 5%;
     }
     .eye-image, .eye-image-confirm {
-        width: 4%;
-        height: 4vh;
+        width: 5%;
+        height: 5vh;
+        margin-left: 74%;
     }
     .password, .confirmpass {
-        margin-left: 0;
+        margin-left: -1%;
     }
     .field-image {
         width: 4%;
