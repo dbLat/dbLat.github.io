@@ -82,7 +82,7 @@ button {
 }
 #menu-icon {
  color: white;
- font-size: 15px;
+ font-size: 20px;
  margin-top: 5px;
  cursor: pointer;
  z-index: 10001;
@@ -90,7 +90,7 @@ button {
 }
 .x {
  color: white;
- font-size: 15px;
+ font-size: 20px;
  margin-top: 5px;
  cursor: pointer;
  z-index: 10001;
@@ -875,9 +875,6 @@ button {
   padding: 5px;
   width: 60px;
   white-space: nowrap;
- }
- .right-header {
-  overflow-x: hidden;
  }
  .bg-img {
   height: 230%;

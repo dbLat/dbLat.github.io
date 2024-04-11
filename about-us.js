@@ -4,15 +4,24 @@ document.addEventListener('DOMContentLoaded', function() {
  let menu = document.querySelector('.menu');
  let account = document.querySelector('#account-btn');
  let accountContainer = document.querySelector('.account-container');
+ let x = document.querySelector('.x');
 
  hamburger.onclick = () => {
   if (!accountContainer.classList.contains('open')) {
+   hamburger.style.display = 'none';
+   x.style.display = 'block';
    menu.classList.toggle('open');
   }
   else {
    accountContainer.classList.remove('open');
    menu.classList.toggle('open');
   }
+ }
+
+ x.onclick = () => {
+  hamburger.style.display = 'block';
+  x.style.display = 'none';
+  menu.classList.remove('open');
  }
 
  account.onclick = () => {

@@ -115,6 +115,15 @@ button {
 #menu-icon {
  color: white;
  font-size: 20px;
+ margin-top: 5px;
+ cursor: pointer;
+ z-index: 10001;
+ display: none;
+}
+.x {
+ color: white;
+ font-size: 20px;
+ margin-top: 5px;
  cursor: pointer;
  z-index: 10001;
  display: none;

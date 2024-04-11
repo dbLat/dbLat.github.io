@@ -90,8 +90,9 @@
       }
       .account-container {
        position: absolute;
-       top: 13%;
+       top: 14%;
        left: 75%;
+       border-radius: 5px;
        width: 280px;
        z-index: 100;
        max-height: 0px;
@@ -119,15 +120,28 @@
       }
       .acc-menu-btn:hover {
        background-color: #052355;
+       padding: 20px;
+       border-radius: 10px;
        transition: all 0.5s ease;
       }
       #menu-icon {
        color: white;
        font-size: 20px;
+       margin-top: 5px;
        cursor: pointer;
        z-index: 10001;
        display: none;
       }
+      .x {
+        color: white;
+        font-size: 20px;
+        margin-top: 5px;
+        cursor: pointer;
+        z-index: 10001;
+        display: none;
+       }
+      /**/
+
       /**/
       .shop-bg{
         width:100%;
@@ -230,6 +244,37 @@
 
    
    /*media*/
+   @media only screen and (max-width: 1230px) {
+    .account-container {
+      left: 73%;
+    }
+   }
+
+  @media only screen and (max-width: 1150px) {
+    .account-container {
+      left: 70%;
+    }
+  }
+
+   @media only screen and (max-width: 1040px) {
+    .main-aboutus{
+      margin-top:10%;
+    }
+    .text-aboutus{
+      font-size: 6vh;
+    }
+    .text-aboutus2{
+      font-size: 2.9vh;
+    }
+   }
+ 
+  @media only screen and (max-width: 1050px) {
+    .account-container {
+      left: 67%;
+    }
+  }
+
+ 
    @media only screen and (max-width: 1000px) {
     #menu-icon {
      display: block;
@@ -267,33 +312,15 @@
         border-radius: 0;
        }
 
-
-    .menu-btn:hover {
-     width: 200px;
-     border-radius: 0;
-    }
+       .menu-btn:hover {
+        background-color: #000F22;
+       }
     .menu.open {
      right: 0;
      transition: all 0.5s ease;
     }
     .account-container {
-     left: 638px;
-     top: 12%;
-     width: 130%;
-    }
-   }
-
-   @media only screen and (max-width: 1040px) {
-    .main-aboutus{
-      margin-top:10%;
-    }
-    
-    .text-aboutus{
-      font-size: 6vh;
-    }
-
-    .text-aboutus2{
-      font-size: 2.9vh;
+      left: 59%;
     }
    }
 
@@ -301,17 +328,46 @@
     .main-aboutus{
       margin-top:10%;
     }
-    
+    .account-container {
+      left: 57%;
+    }
     .text-aboutus{
       font-size: 5vh;
     }
-
     .text-aboutus2{
       font-size: 2.4vh;
       margin-top: 7%;
     }
    }
 
+   @media only screen and (max-width: 850px) {
+    .get-in-touch {
+      font-size: 28px;
+     }
+    .contacts {
+     column-gap: 25px;
+    }
+    .account-container {
+      left: 52%;
+    }
+   }
+
+   @media only screen and (max-width: 770px) {
+    .get-in-touch {
+      font-size: 28px;
+     }
+    .contacts {
+     column-gap: 25px;
+    }
+    .contacts {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+    }
+    .account-container {
+      left: 45%;
+    }
+   }
    
    @media only screen and (max-width: 700px) {
     .team {
@@ -324,11 +380,19 @@
     .main-aboutus {
       opacity: 0.8;
     }
-    .contacts {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 60px;
-     }
+   }
+   
+   @media only screen and (max-width: 650px) {
+    .account-container {
+     left: 37%;
+    }
+   }
+
+   @media only screen and (max-width: 600px) {
+    .account-container {
+      left: 36%;
+      width: 250px;
+    }
    }
 
    @media only screen and (max-width: 560px) {
@@ -336,9 +400,32 @@
       height: 80%;
       margin-top: 15%;
     }
+    .left-header {
+      background-color: #000F22;
+    }
+    .account-container {
+      left: 30%;
+    }
+   }
+
+   @media only screen and (max-width: 500px) {
+    .right-header {
+     overflow-x: hidden;
+    }
+    .account-container {
+      left: 34%;
+      width: 200px;
+     }
+     .accounts-menu {
+      font-size: 15px;
+     }
    }
    
    @media only screen and (max-width: 460px) {
+    .left-header {
+      padding-left: 10px;
+    }
+
     .main-aboutus {
       margin-top: 20%;
     }
@@ -347,9 +434,15 @@
     }
    }
 
-   @media only screen and (max-width: 460px) {
+   @media only screen and (max-width: 360px) {
+    .menu {
+      width: 150px;
+    }
     .text-aboutus2 {
       font-size: 2.8vh;
+    }
+    .text-aboutus {
+      font-size: 5vh;
     }
    }
 
