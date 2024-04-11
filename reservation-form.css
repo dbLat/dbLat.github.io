@@ -70,6 +70,9 @@ body {
  column-gap: 80px;
  color: white;
 }
+input:focus {
+ outline: none;
+}
 .displayInfo {
  width: 250px;
  padding: 7px 0 7px 10px;

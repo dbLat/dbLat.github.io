@@ -93,6 +93,7 @@
     margin-top:1%;
     margin-bottom: 2%;
 }
+
 input:focus {
     outline: none;
 }
@@ -184,6 +185,10 @@ input:focus {
     .rightdiv {
         margin-top: 3%;
     }
+    .button-signup:hover {
+        background-color: midnightblue;
+        color: white;
+    }
 }
 
 @media only screen and (max-width: 900px) {
@@ -248,7 +253,6 @@ input:focus {
 @media only screen and (max-width: 360px) {
     .already {
         font-size: 2vh;
-        overflow-x: hidden;
     }
     .sign {
         font-size: 2vh;
@@ -260,7 +264,7 @@ input:focus {
     .logo {
         width:15%;
         height: 15vh;
-        margin-top: 1%;
+        margin-top: 0;
         margin-left: 5%;
     }
     .eye-image, .eye-image-confirm {
