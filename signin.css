@@ -251,6 +251,9 @@ input:focus {
         margin-top: 30%;
         margin-bottom: 5%;
     }
+    body {
+        overflow-x: hidden;
+    }
 }
 
 @media only screen and (max-width: 360px) {
