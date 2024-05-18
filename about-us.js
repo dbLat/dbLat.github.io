@@ -37,3 +37,19 @@ document.addEventListener('DOMContentLoaded', function() {
  }
 });
 //
+
+let go = document.querySelector('#myProfile');
+let go2 = document.querySelector('#logOut');
+let go3 = document.querySelector('#myAppointments');
+
+go.onclick = () => {
+   window.location.href = "my-profile.html";
+}
+
+go2.onclick = () => {
+    window.location.href = "sign-in.html";
+}
+
+go3.onclick = () => {
+ window.location.href = "my-appointments.html";
+}

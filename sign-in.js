@@ -15,14 +15,15 @@ function togglePasswordVisibility() {
  }, 2000);
 }
 
+function signin_process() {
+    var username = document.getElementById("myUser");
+    var pass = document.getElementById("myPass");
 
-function login() {
- var usernameInput = document.getElementById("myUser").value.trim();
- var passwordInput = document.getElementById("myPass").value.trim();
-
- if (usernameInput !== "" && passwordInput !== "") {
-     window.open("signup.html", "_self");
- } else {
-     alert("Please enter both username and password.");
- }
+    if (username=="" && pass=="") {
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Please enter a username and password!'
+          });
+    }
 }

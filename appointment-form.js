@@ -46,12 +46,12 @@ yesButton.onclick = () => {
 
 
 
-/*
+
 document.addEventListener("DOMContentLoaded", function() {
   const cancel = document.getElementById('cancelID');
 
   cancel.addEventListener('click', function() {
-    window.location.href = ".html";
+    window.location.href = "services-homepage.html";
   });
 });
-*/
+

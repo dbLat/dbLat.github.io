@@ -180,54 +180,23 @@ body {
  color: #A4430A;
  transition: all 0.3s ease;
 }
-.check {
- position: absolute;
- background-color: white;
- width: 350px;
- text-align: center;
- padding: 25px;
- box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.2);
- border-radius: 10px;
- background-color: #C2E8FF;
- opacity: 0;
- transition: opacity 0.5s;
- z-index: 2;
-}
-.check.open {
- opacity: 1;
-}
-.check i {
- color: green;
- font-size: 70px;
- margin-bottom: 20px;
-}
-.check p {
- font-family: "Inconsolata", monospace;
- font-size: 20px;
- margin-bottom: 20px;
-}
-.ok-btn {
- background-color: #F79256;
- border: none;
- color: white;
- padding: 5px;
- width: 80px;
- border-radius: 5px;
- margin-left: 10px;
- font-weight: bold;
- cursor: pointer;
-}
-.ok-btn:hover {
- background-color: #F2B38D;
- color: #A4430A;
- transition: all 0.3s ease;
-}
 /**/
 
 /*media*/
 @media only screen and (max-width: 1280px) {
  body {
   overflow-x: hidden;
+ }
+}
+
+@media only screen and (max-width: 1000px) {
+ .edit-profile:hover {
+  background-color: #F79256;
+  color: white;
+ }
+ .delete-account:hover {
+  background-color: #052355;
+  color: white;
  }
 }
 
@@ -242,14 +211,6 @@ body {
  .edit-profile, .delete-account {
   width: 150px;
   font-size: 13px;
- }
- .edit-profile:hover {
-  background-color: #F79256;
-  color: white;
- }
- .delete-account:hover {
-  background-color: #052355;
-  color: white;
  }
  .vertical {
   height: 80%;

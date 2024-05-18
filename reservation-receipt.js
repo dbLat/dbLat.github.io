@@ -17,3 +17,9 @@ outputElement3.textContent = quan;
 const outputElement4 = document.getElementById('displayTotalPayment');
 outputElement4.textContent = totalPay;
 //
+
+let okay = document.querySelector('.okay-btn');
+
+okay.onclick = () => {
+ window.location.href = "cp-homepage.html";
+}

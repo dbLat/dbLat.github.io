@@ -62,12 +62,12 @@ quantityInput.addEventListener('input', updateTotalPayment);
 //
 
 
-/*
+
 document.addEventListener("DOMContentLoaded", function() {
   const cancel = document.getElementById('cancelID');
 
   cancel.addEventListener('click', function() {
-    window.location.href = ".html";
+    window.location.href = "cp-homepage.html";
   });
 });
-*/
+

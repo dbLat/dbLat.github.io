@@ -75,6 +75,22 @@ document.addEventListener('DOMContentLoaded', function() {
 let preOrder = document.querySelector('#preOrderID');
 
 preOrder.onclick = () => {
-  window.location.href = "reservation.html";
+  window.location.href = "reservation-form.html";
 }
 
+let go = document.querySelector('#myProfile');
+let go2 = document.querySelector('#logOut');
+let back = document.querySelector('.back-btn');
+
+
+go.onclick = () => {
+   window.location.href = "my-profile.html";
+}
+
+go2.onclick = () => {
+    window.location.href = "sign-in.html";
+}
+
+back.onclick = () => {
+  window.location.href = "cp-homepage.html";
+}

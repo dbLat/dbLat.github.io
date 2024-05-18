@@ -1,9 +1,8 @@
 //confirmation box show
 let deleteAccount = document.querySelector('#deleteAccountID');
 let confirmBox = document.querySelector('.warning');
-let check = document.querySelector('.check');
-let noButton = document.querySelector('#noBtnID');
-let yesButton = document.querySelector('#yesBtnID');
+let noButton = document.querySelector('.no-btn');
+let yesButton = document.querySelector('.yes-btn');
 let okButton = document.querySelector('#okBtnID');
 
 deleteAccount.onclick = () => {
@@ -15,20 +14,20 @@ noButton.onclick = () => {
 }
 //if yes open check container
 yesButton.onclick = () => {
-  confirmBox.classList.remove('open');
-  check.classList.add('open');
-}
-//if ok
-okButton.onclick = () => {
-  check.classList.remove('open');
+  window.location.href = "sign-up.html";
 }
 //
 
 //go to edit profile
 let editProfileButton = document.querySelector('#editProfileID');
+let homepage = document.querySelector('#back');
 
 editProfileButton.onclick = () => {
-  window.location.href = "edit-profile.html";
+  window.location.href = "edit-profile.php";
+}
+
+homepage.onclick = () => {
+  window.location.href = "cp-homepage.html";
 }
 //
 

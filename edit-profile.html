@@ -47,32 +47,25 @@
   <!---->
 
   <!--main container-->
-  <form id="editProfile" action="my-profile.html" method="get">
+  <form id="editProfile" action="edit-profile.php" method="post" enctype="multipart/form-data">
    <div class="main-container">
     <div class="left-main">
      <img id="profilePic" src="icons/profile.png" alt="Upload Image"><br>
      <label for="inputFile">+</label>
-     <input type="file" id="inputFile" accept="image/jpeg, image/png, imgage/jpg"><br>
-     <button type="button" class="change-pass" id="changePassButton">CHANGE PASSWORD</button><br>
-     <button type="submit" class="save-changes" id="saveID">SAVE CHANGES</button>
+     <input type="file" id="inputFile" name="profile-pic" accept="image/jpeg, image/png, imgage/jpg"><br>
+     <button type="button" class="change-pass" id="changePassButton" name="changePass">CHANGE PASSWORD</button><br>
+     <button type="submit" class="save-changes" id="saveID" name="saveChanges">SAVE CHANGES</button>
     </div>
     <div class="vertical"></div>
-    <!--saved changes-->
-    <div class="saved-changes">
-     <i class="fi fi-ss-check-circle"></i><br>
-     <p>Saved Changes!</p>
-     <button class="ok-btn" id="okBtnID">OKAY</button>
-    </div>
-    <!---->
     <div class="right-main">
      <p>First Name</p>
-     <input type="text" name="firstName" class="display-info" value="Debbie" id="firstNameID"><br>
+     <input type="text" name="firstname" class="display-info" id="firstNameID"><br>
      <p>Last Name</p>
-     <input type="text" name="lastName" class="display-info" value="Gerodias" id="lastNameID"><br>
+     <input type="text" name="lastname" class="display-info" id="lastNameID"><br>
      <p>Phone Number</p>
-     <input type="text" name="phoneNum" class="display-info" value="09923316087" id="phoneNumberID"><br>
+     <input type="text" name="phonenumber" class="display-info" id="phoneNumberID"><br>
      <p>Email</p>
-     <input type="email" name="email" class="display-info" value="debbiemichelle19@gmail.com" id="emailID"><br>
+     <input type="email" name="email" class="display-info" id="emailID"><br>
     </div>
    </div>
   </form>
